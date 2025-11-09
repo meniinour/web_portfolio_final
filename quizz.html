@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quizz sur le développement web">
+    <title>Quizz - Développement Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar chargée dynamiquement -->
+
+    <main>
+        <section class="page-header">
+            <h1>Quizz sur le Développement Web</h1>
+            <p>Testez vos connaissances en développement web !</p>
+        </section>
+
+        <section class="quizz-content">
+            <form id="quizz-form">
+                <div class="question-block">
+                    <h3>Question 1 : Que signifie HTML ?</h3>
+                    <label>
+                        <input type="radio" name="q1" value="a">
+                        HyperText Markup Language
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="b">
+                        High Tech Modern Language
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="c">
+                        HyperText Machine Language
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="d">
+                        Home Tool Markup Language
+                    </label>
+                </div>
+
+                <div class="question-block">
+                    <h3>Question 2 : Quelle balise HTML est utilisée pour créer un lien ?</h3>
+                    <label>
+                        <input type="radio" name="q2" value="a">
+                        &lt;link&gt;
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="b">
+                        &lt;a&gt;
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="c">
+                        &lt;href&gt;
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="d">
+                        &lt;url&gt;
+                    </label>
+                </div>
+
+                <div class="question-block">
+                    <h3>Question 3 : Que signifie CSS ?</h3>
+                    <label>
+                        <input type="radio" name="q3" value="a">
+                        Computer Style Sheets
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="b">
+                        Cascading Style Sheets
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="c">
+                        Creative Style Sheets
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="d">
+                        Colorful Style Sheets
+                    </label>
+                </div>
+
+                <div class="question-block">
+                    <h3>Question 4 : Quel attribut HTML est utilisé pour définir un style inline ?</h3>
+                    <label>
+                        <input type="radio" name="q4" value="a">
+                        font
+                    </label>
+                    <label>
+                        <input type="radio" name="q4" value="b">
+                        styles
+                    </label>
+                    <label>
+                        <input type="radio" name="q4" value="c">
+                        style
+                    </label>
+                    <label>
+                        <input type="radio" name="q4" value="d">
+                        css
+                    </label>
+                </div>
+
+                <div class="question-block">
+                    <h3>Question 5 : Quelle méthode JavaScript est utilisée pour sélectionner un élément par son ID ?</h3>
+                    <label>
+                        <input type="radio" name="q5" value="a">
+                        getElementById()
+                    </label>
+                    <label>
+                        <input type="radio" name="q5" value="b">
+                        getElementsByClass()
+                    </label>
+                    <label>
+                        <input type="radio" name="q5" value="c">
+                        querySelector()
+                    </label>
+                    <label>
+                        <input type="radio" name="q5" value="d">
+                        selectById()
+                    </label>
+                </div>
+
+                <div class="question-block">
+                    <h3>Question 6 : Quelle balise HTML est utilisée pour créer un tableau ?</h3>
+                    <label>
+                        <input type="radio" name="q6" value="a">
+                        &lt;table&gt;
+                    </label>
+                    <label>
+                        <input type="radio" name="q6" value="b">
+                        &lt;tab&gt;
+                    </label>
+                    <label>
+                        <input type="radio" name="q6" value="c">
+                        &lt;grid&gt;
+                    </label>
+                    <label>
+                        <input type="radio" name="q6" value="d">
+                        &lt;data&gt;
+                    </label>
+                </div>
+
+                <div class="question-block">
+                    <h3>Question 7 : Quelle propriété CSS est utilisée pour changer la couleur du texte ?</h3>
+                    <label>
+                        <input type="radio" name="q7" value="a">
+                        text-color
+                    </label>
+                    <label>
+                        <input type="radio" name="q7" value="b">
+                        font-color
+                    </label>
+                    <label>
+                        <input type="radio" name="q7" value="c">
+                        color
+                    </label>
+                    <label>
+                        <input type="radio" name="q7" value="d">
+                        text-style
+                    </label>
+                </div>
+
+                <div class="question-block">
+                    <h3>Question 8 : Quel est le sélecteur CSS pour cibler tous les éléments ?</h3>
+                    <label>
+                        <input type="radio" name="q8" value="a">
+                        *
+                    </label>
+                    <label>
+                        <input type="radio" name="q8" value="b">
+                        #
+                    </label>
+                    <label>
+                        <input type="radio" name="q8" value="c">
+                        .
+                    </label>
+                    <label>
+                        <input type="radio" name="q8" value="d">
+                        &
+                    </label>
+                </div>
+
+                <div class="question-block">
+                    <h3>Question 9 : Quelle balise HTML est utilisée pour créer un formulaire ?</h3>
+                    <label>
+                        <input type="radio" name="q9" value="a">
+                        &lt;form&gt;
+                    </label>
+                    <label>
+                        <input type="radio" name="q9" value="b">
+                        &lt;input&gt;
+                    </label>
+                    <label>
+                        <input type="radio" name="q9" value="c">
+                        &lt;fieldset&gt;
+                    </label>
+                    <label>
+                        <input type="radio" name="q9" value="d">
+                        &lt;submit&gt;
+                    </label>
+                </div>
+
+                <div class="question-block">
+                    <h3>Question 10 : Quelle propriété CSS est utilisée pour définir l'espacement entre les bordures d'un tableau ?</h3>
+                    <label>
+                        <input type="radio" name="q10" value="a">
+                        border-spacing
+                    </label>
+                    <label>
+                        <input type="radio" name="q10" value="b">
+                        border-gap
+                    </label>
+                    <label>
+                        <input type="radio" name="q10" value="c">
+                        table-spacing
+                    </label>
+                    <label>
+                        <input type="radio" name="q10" value="d">
+                        cell-spacing
+                    </label>
+                </div>
+
+                <div class="question-block">
+                    <h3>Question 11 : Quelle méthode JavaScript est utilisée pour ajouter un élément à la fin d'un tableau ?</h3>
+                    <label>
+                        <input type="radio" name="q11" value="a">
+                        push()
+                    </label>
+                    <label>
+                        <input type="radio" name="q11" value="b">
+                        add()
+                    </label>
+                    <label>
+                        <input type="radio" name="q11" value="c">
+                        append()
+                    </label>
+                    <label>
+                        <input type="radio" name="q11" value="d">
+                        insert()
+                    </label>
+                </div>
+
+                <div class="question-block">
+                    <h3>Question 12 : Quelle balise HTML est utilisée pour créer une liste non ordonnée ?</h3>
+                    <label>
+                        <input type="radio" name="q12" value="a">
+                        &lt;ul&gt;
+                    </label>
+                    <label>
+                        <input type="radio" name="q12" value="b">
+                        &lt;ol&gt;
+                    </label>
+                    <label>
+                        <input type="radio" name="q12" value="c">
+                        &lt;list&gt;
+                    </label>
+                    <label>
+                        <input type="radio" name="q12" value="d">
+                        &lt;li&gt;
+                    </label>
+                </div>
+
+                <div class="question-block">
+                    <h3>Question 13 : Quelle propriété CSS est utilisée pour rendre un élément invisible mais garder son espace ?</h3>
+                    <label>
+                        <input type="radio" name="q13" value="a">
+                        display: none
+                    </label>
+                    <label>
+                        <input type="radio" name="q13" value="b">
+                        visibility: hidden
+                    </label>
+                    <label>
+                        <input type="radio" name="q13" value="c">
+                        opacity: 0
+                    </label>
+                    <label>
+                        <input type="radio" name="q13" value="d">
+                        hidden: true
+                    </label>
+                </div>
+
+                <div class="question-block">
+                    <h3>Question 14 : Quelle balise HTML5 est utilisée pour définir un en-tête de section ?</h3>
+                    <label>
+                        <input type="radio" name="q14" value="a">
+                        &lt;head&gt;
+                    </label>
+                    <label>
+                        <input type="radio" name="q14" value="b">
+                        &lt;header&gt;
+                    </label>
+                    <label>
+                        <input type="radio" name="q14" value="c">
+                        &lt;heading&gt;
+                    </label>
+                    <label>
+                        <input type="radio" name="q14" value="d">
+                        &lt;h1&gt;
+                    </label>
+                </div>
+
+                <div class="question-block">
+                    <h3>Question 15 : Quelle propriété CSS est utilisée pour centrer un élément horizontalement ?</h3>
+                    <label>
+                        <input type="radio" name="q15" value="a">
+                        align: center
+                    </label>
+                    <label>
+                        <input type="radio" name="q15" value="b">
+                        text-align: center
+                    </label>
+                    <label>
+                        <input type="radio" name="q15" value="c">
+                        margin: 0 auto
+                    </label>
+                    <label>
+                        <input type="radio" name="q15" value="d">
+                        center: true
+                    </label>
+                </div>
+
+                <button type="submit" class="btn-submit">Valider le Quizz</button>
+            </form>
+
+            <div id="results" class="results hidden">
+                <h2>Résultats du Quizz</h2>
+                <div class="score-display">
+                    <p>Votre score : <span id="score"></span> / 15</p>
+                    <p class="percentage">Pourcentage : <span id="percentage"></span>%</p>
+                </div>
+                <div class="stats-summary">
+                    <div class="stat-item stat-correct">
+                        <i class="fas fa-check-circle"></i>
+                        <span class="stat-label">Réponses correctes :</span>
+                        <span class="stat-value" id="correct-count">0</span>
+                    </div>
+                    <div class="stat-item stat-incorrect">
+                        <i class="fas fa-times-circle"></i>
+                        <span class="stat-label">Réponses fausses :</span>
+                        <span class="stat-value" id="incorrect-count">0</span>
+                    </div>
+                    <div class="stat-item stat-unanswered">
+                        <i class="fas fa-question-circle"></i>
+                        <span class="stat-label">Non répondues :</span>
+                        <span class="stat-value" id="unanswered-count">0</span>
+                    </div>
+                </div>
+                <div class="correct-answers">
+                    <h3>Détail des Réponses :</h3>
+                    <ul id="correct-answers-list"></ul>
+                </div>
+                <div class="results-actions">
+                    <button type="button" class="btn-email" onclick="sendResultsByEmail()">
+                        <i class="fas fa-envelope"></i> Envoyer les résultats par email
+                    </button>
+                    <button type="button" class="btn-reset" onclick="resetQuizz()">Refaire le Quizz</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Nour Menii</h3>
+                <p>Développeuse Web & Mobile | Data Analyst</p>
+            </div>
+            <div class="footer-contact">
+                <p><i class="fas fa-envelope"></i> nourmenii0@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +216 54 341 041</p>
+                <p><i class="fas fa-map-marker-alt"></i> Sfax, Tunisie</p>
+            </div>
+        </div>
+        <p class="footer-copyright">&copy; 2024 Nour Menii. Tous droits réservés.</p>
+    </footer>
+
+    <script src="loadNavbar.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
