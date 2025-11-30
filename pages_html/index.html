@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio professionnel - Site web personnel">
+    <title>Nour Menii - Portfolio</title>
+     <!-- Favicon avec tailles standard -->
+     <link rel="icon" type="image/x-icon" sizes="16x16" href="images/fav.png">
+     
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header id="main-header">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top animate__animated animate__fadeInDown">
+            <div class="nav-container container-fluid">
+                <div class="logo animate__animated animate__fadeInLeft">
+                    <div class="logo-wrapper">
+                        <span class="logo-text">NM</span>
+                        <div class="logo-glow"></div>
+                    </div>
+                    <h1 class="logo-name">Nour Menii</h1>
+                </div>
+                <button class="navbar-toggler hamburger" type="button" id="hamburger" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="nav-menu navbar-nav ms-auto">
+                        <li class="nav-item animate__animated animate__fadeInUp" style="animation-delay: 0.1s;">
+                            <a href="index.html" class="nav-link">
+                                <span class="nav-icon"><i class="fas fa-home"></i></span>
+                                <span class="nav-text">Accueil</span>
+                                <span class="nav-indicator"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+                            <a href="parcours.html" class="nav-link">
+                                <span class="nav-icon"><i class="fas fa-graduation-cap"></i></span>
+                                <span class="nav-text">Parcours</span>
+                                <span class="nav-indicator"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item animate__animated animate__fadeInUp" style="animation-delay: 0.3s;">
+                            <a href="competences.html" class="nav-link">
+                                <span class="nav-icon"><i class="fas fa-code"></i></span>
+                                <span class="nav-text">Compétences</span>
+                                <span class="nav-indicator"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+                            <a href="experiences.html" class="nav-link">
+                                <span class="nav-icon"><i class="fas fa-briefcase"></i></span>
+                                <span class="nav-text">Expériences</span>
+                                <span class="nav-indicator"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item animate__animated animate__fadeInUp" style="animation-delay: 0.5s;">
+                            <a href="manifestations.html" class="nav-link">
+                                <span class="nav-icon"><i class="fas fa-calendar-alt"></i></span>
+                                <span class="nav-text">Manifestations</span>
+                                <span class="nav-indicator"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item animate__animated animate__fadeInUp" style="animation-delay: 0.6s;">
+                            <a href="projets.html" class="nav-link">
+                                <span class="nav-icon"><i class="fas fa-project-diagram"></i></span>
+                                <span class="nav-text">Projets</span>
+                                <span class="nav-indicator"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item animate__animated animate__fadeInUp" style="animation-delay: 0.7s;">
+                            <a href="passions.html" class="nav-link">
+                                <span class="nav-icon"><i class="fas fa-heart"></i></span>
+                                <span class="nav-text">Passions</span>
+                                <span class="nav-indicator"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item animate__animated animate__fadeInUp" style="animation-delay: 0.8s;">
+                            <a href="quizz.html" class="nav-link">
+                                <span class="nav-icon"><i class="fas fa-question-circle"></i></span>
+                                <span class="nav-text">Quizz</span>
+                                <span class="nav-indicator"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item animate__animated animate__fadeInUp" style="animation-delay: 0.9s;">
+                            <a href="contact.html" class="nav-link">
+                                <span class="nav-icon"><i class="fas fa-envelope"></i></span>
+                                <span class="nav-text">Contact</span>
+                                <span class="nav-indicator"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item animate__animated animate__fadeInUp" style="animation-delay: 1s;">
+                            <a href="temoignage.html" class="nav-link">
+                                <span class="nav-icon"><i class="fas fa-comments"></i></span>
+                                <span class="nav-text">Témoignage</span>
+                                <span class="nav-indicator"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-backdrop"></div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <div class="profile-image">
+                    <div class="image-wrapper">
+                        <img src="images/nour1blue.png" alt="Nour Menii">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">Bonjour, je suis</span>
+                        <span class="title-name">Nour Menii</span>
+                    </h1>
+                    <p class="subtitle typing-effect">Étudiante en première année d'ingénierie informatique</p>
+                
+                    <div class="hero-cta">
+                        <a href="contact.html" class="btn-primary">Me Contacter</a>
+                        <a href="MENII_NOUR(CV).pdf" download="MENII_NOUR_CV.pdf" class="btn-secondary">
+                            <i class="fas fa-download"></i> Télécharger CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+       
+        <section id="about" class="about-section">
+                <div class="about-me-text-large">
+                    <span class="about-text-left">À PROPOS</span>
+                    <span class="about-text-right">DE MOI</span>
+                </div>
+                <div class="about-me-content">
+                    <div class="about-me-image-wrapper">
+                        <img src="images/nour2.png" alt="Nour Menii" class="about-me-image">
+                        <div class="about-me-line"></div>
+                    </div>
+                    <div class="about-me-info">
+                       
+                        <div class="about-me-role-left">
+                            <p class="role-text">  INNOVATRICE TECH</p>
+                        </div>
+                        <div class="about-me-role-right">
+                            <p class="role-text"> CRÉATRICE D'EXPÉRIENCES</p>
+                        </div>
+                        <div class="about-me-location">
+                            <i class="fas fa-map-marker-alt location-icon"></i>
+                            <div class="location-text">
+                                <p>SFAX,</p>
+                                <p>TUNISIE</p>
+                            </div>
+                        </div>
+                        <div class="about-me-presenter">
+                            <i class="fas fa-user presenter-icon"></i>
+                            <div class="presenter-text">
+                                <p>NOUR MENII</p>
+                                <p>"MAVERICK"</p>
+                                <div class="bio-linkedin">
+                                    <button class="linkedin-search-btn" onclick="window.open('https://www.linkedin.com/in/nour-m-1a0958186', '_blank')">
+                                        <i class="fab fa-linkedin"></i>
+                                        <span class="linkedin-name">Nour Menii</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="about-me-description">
+                    <p class="description-text">
+                        Passionnée par l'informatique et l'innovation, je suis <strong>Nour Menii</strong>, 
+                        licenciée en Sciences Informatiques spécialisée en <strong>Big Data & Analyse de Données</strong>.
+                    </p>
+                    <p class="description-text">
+                        Actuellement en <strong>Mastère Professionnel en Innovation et Gestion de Projets (IGP)</strong> 
+                        et en <strong>Ingénierie Génie Informatique</strong> à l'IIT, je combine expertise technique 
+                        et vision stratégique pour créer des solutions digitales innovantes.
+                    </p>
+                    <p class="description-text">
+                        Mon parcours professionnel m'a permis de développer des compétences solides en 
+                        <strong>développement web</strong> (React, PHP, Laravel), <strong>développement mobile</strong> (Flutter), 
+                        et en <strong>analyse de données</strong>. J'ai notamment contribué au développement d'applications 
+                        médicales innovantes et de systèmes CRM complexes.
+                    </p>
+                
+                </div>
+        </section>
+
+    </main>
+   
+
+       
+
+<!-- Contact -->
+    
+  
+        <section id="contact">
+        <div class="contact-text-large">
+            <span class="contact-text-left">console.log</span>
+            <span class="contact-text-right">("Trouvez-moi")</span>
+        </div>
+       
+        
+            <div class="contact-line"></div>
+            <div class="contact-info">
+                <div class="contact-info-item-left">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <div class="contact-text">
+                        <p>EMAIL</p>
+                        <a href="mailto:nourmenii0@gmail.com" class="contact-link">nourmenii0@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-info-item-center">
+                    <i class="fab fa-github contact-icon"></i>
+                    <div class="contact-text">
+                        <p>GITHUB</p>
+                        <a href="https://github.com/meniinour/" target="_blank" class="contact-link">github.com/meniinour</a>
+                    </div>
+                </div>
+                <div class="contact-info-item-right">
+                    <i class="fab fa-linkedin contact-icon"></i>
+                    <div class="contact-text">
+                        <p>LINKEDIN</p>
+                        <a href="https://www.linkedin.com/in/nour-m-1a0958186" target="_blank" class="contact-link">linkedin.com/nourmenii</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+      </main>
+   
+   <footer>
+        
+        <p class="footer-copyright">&copy; 2025 Nour Menii. Tous droits réservés.</p>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Animate.css pour les animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Script pour animations au scroll -->
+    <script>
+        // Animation au scroll pour la navbar
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-lg');
+                navbar.style.transition = 'all 0.3s ease-in-out';
+            } else {
+                navbar.classList.remove('shadow-lg');
+            }
+        });
+
+        // Animation des liens au survol
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('mouseenter', function() {
+                this.classList.add('animate__animated', 'animate__pulse');
+            });
+            link.addEventListener('mouseleave', function() {
+                this.classList.remove('animate__animated', 'animate__pulse');
+            });
+        });
+
+        // Animation du logo au chargement
+        document.addEventListener('DOMContentLoaded', function() {
+            const logo = document.querySelector('.logo');
+            if (logo) {
+                logo.classList.add('animate__animated', 'animate__bounceIn');
+            }
+        });
+    </script>
+ 
+</body>
+</html>
+

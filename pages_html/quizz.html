@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Quizz sur le développement web">
     <title>Quizz - Développement Web</title>
+    <!-- Favicon avec tailles standard -->
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="images/fav.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -15,107 +17,141 @@
         <section class="page-header">
             <h1>Quizz sur le Développement Web</h1>
             <p>Testez vos connaissances en développement web !</p>
+            <!-- Timer -->
+           
         </section>
-
+        <div id="quiz-timer" class="quiz-timer">
+            <div class="timer-content">
+                <span>Temps restant : </span>
+                <span id="timer-display">05:00</span>
+            </div>
+            <div class="steps-remaining">
+                <span>Étapes restantes : </span>
+                <span id="steps-display">15</span>
+            </div>
+        </div>
         <section class="quizz-content">
+           
+            
+            <!-- Message d'erreur pour questions non répondues -->
+            <div id="quiz-error-message" class="quiz-error-message hidden">
+                <i class="fas fa-exclamation-triangle"></i>
+                <span>Veuillez répondre à toutes les questions avant de valider le quiz.</span>
+            </div>
+            
+            <!-- Score en haut -->
+            <div id="quiz-score-top" class="quiz-score-top hidden">
+                <div class="score-top-content">
+                    <h2>Votre Score : <span id="score-top-value">0</span> / 15</h2>
+                    <div class="score-top-actions">
+                        <button type="button" class="btn-email-top" onclick="sendResultsByEmail()">
+                            <i class="fas fa-envelope"></i> Envoyer par email
+                        </button>
+                        <button type="button" class="btn-reset-top" onclick="resetQuizz()">
+                            <i class="fas fa-redo"></i> Refaire le Quiz
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
             <form id="quizz-form">
                 <div class="question-block">
-                    <h3>Question 1 : Que signifie HTML ?</h3>
+                    <h3>Question 1 : Quelle est la différence entre display: none et visibility: hidden en CSS ?</h3>
                     <label>
                         <input type="radio" name="q1" value="a">
-                        HyperText Markup Language
+                        display: none supprime l'élément du flux, visibility: hidden le cache mais garde l'espace
                     </label>
                     <label>
                         <input type="radio" name="q1" value="b">
-                        High Tech Modern Language
+                        Les deux sont identiques et suppriment l'élément du flux
                     </label>
                     <label>
                         <input type="radio" name="q1" value="c">
-                        HyperText Machine Language
+                        visibility: hidden supprime l'élément, display: none garde l'espace
                     </label>
                     <label>
                         <input type="radio" name="q1" value="d">
-                        Home Tool Markup Language
+                        Aucune différence, ce sont des synonymes
                     </label>
                 </div>
 
                 <div class="question-block">
-                    <h3>Question 2 : Quelle balise HTML est utilisée pour créer un lien ?</h3>
+                    <h3>Question 2 : Quelle méthode JavaScript permet de créer une copie superficielle (shallow copy) d'un objet ?</h3>
                     <label>
                         <input type="radio" name="q2" value="a">
-                        &lt;link&gt;
+                        Object.assign({}, obj) ou {...obj}
                     </label>
                     <label>
                         <input type="radio" name="q2" value="b">
-                        &lt;a&gt;
+                        Object.clone(obj)
                     </label>
                     <label>
                         <input type="radio" name="q2" value="c">
-                        &lt;href&gt;
+                        obj.copy()
                     </label>
                     <label>
                         <input type="radio" name="q2" value="d">
-                        &lt;url&gt;
+                        JSON.parse(JSON.stringify(obj))
                     </label>
                 </div>
 
                 <div class="question-block">
-                    <h3>Question 3 : Que signifie CSS ?</h3>
+                    <h3>Question 3 : Quelle est la spécificité CSS de ce sélecteur : #header .nav li.active ?</h3>
                     <label>
                         <input type="radio" name="q3" value="a">
-                        Computer Style Sheets
+                        0-1-2-0 (1 ID, 2 classes)
                     </label>
                     <label>
                         <input type="radio" name="q3" value="b">
-                        Cascading Style Sheets
+                        0-1-1-2 (1 ID, 1 classe, 2 éléments)
                     </label>
                     <label>
                         <input type="radio" name="q3" value="c">
-                        Creative Style Sheets
+                        1-2-0-0 (1 ID, 2 classes)
                     </label>
                     <label>
                         <input type="radio" name="q3" value="d">
-                        Colorful Style Sheets
+                        0-0-2-3 (2 classes, 3 éléments)
                     </label>
                 </div>
 
                 <div class="question-block">
-                    <h3>Question 4 : Quel attribut HTML est utilisé pour définir un style inline ?</h3>
+                    <h3>Question 4 : Quelle est la différence entre let, const et var en JavaScript ?</h3>
                     <label>
                         <input type="radio" name="q4" value="a">
-                        font
+                        let et const sont block-scoped, var est function-scoped. const est immuable, let et var sont mutables
                     </label>
                     <label>
                         <input type="radio" name="q4" value="b">
-                        styles
+                        Tous sont identiques, juste des noms différents
                     </label>
                     <label>
                         <input type="radio" name="q4" value="c">
-                        style
+                        var est block-scoped, let et const sont function-scoped
                     </label>
                     <label>
                         <input type="radio" name="q4" value="d">
-                        css
+                        const peut être réassigné, let et var ne peuvent pas
                     </label>
                 </div>
 
                 <div class="question-block">
-                    <h3>Question 5 : Quelle méthode JavaScript est utilisée pour sélectionner un élément par son ID ?</h3>
+                    <h3>Question 5 : Qu'est-ce qu'une closure en JavaScript ?</h3>
                     <label>
                         <input type="radio" name="q5" value="a">
-                        getElementById()
+                        Une fonction qui a accès aux variables de sa portée externe même après que la fonction externe soit retournée
                     </label>
                     <label>
                         <input type="radio" name="q5" value="b">
-                        getElementsByClass()
+                        Une méthode pour fermer une fenêtre de navigateur
                     </label>
                     <label>
                         <input type="radio" name="q5" value="c">
-                        querySelector()
+                        Une fonction qui ne peut pas accéder aux variables externes
                     </label>
                     <label>
                         <input type="radio" name="q5" value="d">
-                        selectById()
+                        Un type de boucle en JavaScript
                     </label>
                 </div>
 

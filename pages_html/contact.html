@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulaire de contact">
+    <title>Contact</title>
+    <!-- Favicon avec tailles standard -->
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="images/fav.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar chargée dynamiquement -->
+
+    <main>
+        <!-- Message de confirmation en haut de la page -->
+        <div id="form-success-message" class="form-success-message-top" style="display: none;">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Message envoyé avec succès !</h3>
+            <p>Merci pour votre message. Je vous répondrai dans les plus brefs délais.</p>
+        </div>
+        
+        <section class="contact-hero">
+            <div class="contact-hero-content">
+                <div class="hero-accent-line"></div>
+                <h1 class="contact-main-title">
+                    <span class="title-part-1">Parlons de</span>
+                    <span class="title-part-2">Votre Prochain Projet</span>
+                </h1>
+                <p class="hero-description">
+                    Je suis toujours ouvert à discuter de nouvelles opportunités, collaborations ou simplement 
+                    échanger sur des projets passionnants. N'hésitez pas à me contacter !
+                </p>
+            </div>
+        </section>
+
+        <section class="contact-content-extraordinary">
+            <div class="contact-wrapper">
+                <!-- Left Section - Contact Info -->
+                <div class="contact-info-section">
+                    <div class="info-header">
+                        <h2>Restons en Contact</h2>
+                        <p>Plusieurs façons de me joindre</p>
+                    </div>
+
+                    <div class="contact-methods">
+                        <div class="contact-method-item" data-method="email">
+                            <div class="method-icon-wrapper">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-content">
+                                <h3>Email</h3>
+                                <a href="mailto:nourmenii0@gmail.com">nourmenii0@gmail.com</a>
+                                <span class="method-hint">Réponse sous 24h</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-method-item" data-method="phone">
+                            <div class="method-icon-wrapper">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="method-content">
+                                <h3>Téléphone</h3>
+                                <a href="tel:+21654341041">+216 54341041</a>
+                                <span class="method-hint">Lun - Ven : 9h - 18h</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-method-item" data-method="location">
+                            <div class="method-icon-wrapper">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="method-content">
+                                <h3>Localisation</h3>
+                                <p>Sfax, Tunisie</p>
+                                <span class="method-hint">Disponible pour rencontres</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-method-item" data-method="cv">
+                            <div class="method-icon-wrapper">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <div class="method-content">
+                                <h3>Curriculum Vitae</h3>
+                                <a href="MENII_NOUR(CV).pdf" target="_blank" rel="noopener noreferrer" class="cv-download-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Voir mon CV
+                                </a>
+                                <span class="method-hint">Format PDF</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Section - Contact Form -->
+                <div class="contact-form-section">
+                    <div class="form-header-section">
+                        <div class="form-accent-bar"></div>
+                        <h2>Envoyer un Message</h2>
+                        <p>Remplissez le formulaire ci-dessous</p>
+                    </div>
+
+                    <form id="contact-form" class="extraordinary-form">
+                        <div class="form-row">
+                            <div class="form-group-extraordinary">
+                                <label for="nom">
+                                    <span class="label-text">Votre Nom *</span>
+                                </label>
+                                <div class="input-wrapper">
+                                    <input type="text" id="nom" name="nom" required placeholder="Ex. Jean Dupont">
+                                    <span class="input-border"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group-extraordinary">
+                                <label for="email">
+                                    <span class="label-text">Email *</span>
+                                </label>
+                                <div class="input-wrapper">
+                                    <input type="email" id="email" name="email" required placeholder="exemple@gmail.com">
+                                    <span class="input-border"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group-extraordinary">
+                                <label for="phone">
+                                    <span class="label-text">Téléphone *</span>
+                                </label>
+                                <div class="input-wrapper">
+                                    <input type="tel" id="phone" name="phone" required placeholder="+216 00000000" pattern="\+216\s?\d{8}" maxlength="13">
+                                    <span class="input-border"></span>
+                                </div>
+                                <small class="phone-hint" style="display: block; margin-top: 5px; color: #888; font-size: 0.85em;">Format: +216 suivi de 8 chiffres</small>
+                            </div>
+                        </div>
+
+                       
+
+                        <div class="form-row">
+                            <div class="form-group-extraordinary">
+                                <label for="message">
+                                    <span class="label-text">Votre Message *</span>
+                                </label>
+                                
+                                <div class="textarea-wrapper">
+                                    <textarea id="message" name="message" required placeholder="Saisissez votre message ici..."></textarea>
+                                    <span class="input-border"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn-submit-extraordinary">
+                            <span class="btn-text">Envoyer</span>
+                            <span class="btn-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </span>
+                            <span class="btn-loader-extraordinary">
+                                <i class="fas fa-spinner fa-spin"></i>
+                            </span>
+                        </button>
+                    </form>
+                    
+                    <!-- Message d'erreur -->
+                    <div id="form-error-message" class="form-error-message" style="display: none;"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        
+        <p class="footer-copyright">&copy; 2025 Nour Menii. Tous droits réservés.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="emailjs-config.js"></script>
+    <script src="loadNavbar.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rapport détaillé du projet - Arborescence et captures d'écran">
+    <title>Rapport du Projet</title>
+    <!-- Favicon avec tailles standard -->
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="images/fav.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .rapport-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .rapport-section {
+            margin-bottom: 60px;
+        }
+        .rapport-section h2 {
+            color: var(--primary-color, #4a90e2);
+            margin-bottom: 30px;
+            font-size: 2em;
+            border-bottom: 3px solid var(--primary-color, #4a90e2);
+            padding-bottom: 10px;
+        }
+        .rapport-section h3 {
+            color: var(--secondary-color, #333);
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+        .arborescence-box {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 30px;
+            margin: 20px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            line-height: 1.8;
+            overflow-x: auto;
+            white-space: pre-wrap;
+        }
+        .arborescence-box code {
+            color: #2c3e50;
+        }
+        .screenshot-container {
+            margin: 30px 0;
+            text-align: center;
+        }
+        .screenshot-placeholder {
+            width: 100%;
+            max-width: 900px;
+            height: 500px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2em;
+            margin: 0 auto;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            border: 2px dashed rgba(255,255,255,0.3);
+        }
+        .screenshot-placeholder i {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .screenshot-caption {
+            margin-top: 15px;
+            font-style: italic;
+            color: #666;
+            font-size: 0.95em;
+        }
+        .info-box {
+            background: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .info-box p {
+            margin: 0;
+            color: #1565c0;
+        }
+        .structure-item {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        .structure-item strong {
+            color: #4a90e2;
+        }
+        .page-break {
+            page-break-after: always;
+            margin: 60px 0;
+        }
+        @media print {
+            .page-break {
+                page-break-after: always;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar chargée dynamiquement -->
+
+    <main>
+        <section class="page-header">
+            <h1>Rapport du Projet</h1>
+            <p>Documentation détaillée de l'architecture et de l'organisation du projet</p>
+        </section>
+
+        <section class="rapport-content">
+            <!-- Section 1: Introduction -->
+            <article class="rapport-section">
+                <h2><i class="fas fa-file-alt"></i> Introduction</h2>
+                <p>
+                    Ce rapport présente une documentation complète du projet de portfolio personnel développé 
+                    dans le cadre du cours de Programmation Web 1. Le projet consiste en un site web moderne 
+                    et responsive présentant le parcours académique, les compétences, les expériences et les 
+                    projets de l'étudiante Nour Menii.
+                </p>
+                <p>
+                    Le site a été développé en utilisant les technologies web fondamentales : <strong>HTML5</strong>, 
+                    <strong>CSS3</strong> et <strong>JavaScript</strong>. Il présente une architecture modulaire 
+                    avec une navigation dynamique et une interface utilisateur moderne et intuitive.
+                </p>
+            </article>
+
+            <!-- Section 2: Arborescence du Projet -->
+            <article class="rapport-section">
+                <h2><i class="fas fa-folder-tree"></i> Arborescence du Projet</h2>
+                
+                <h3>1. Structure Générale</h3>
+                <p>
+                    Le projet est organisé de manière structurée pour faciliter la maintenance et le développement. 
+                    La racine du projet contient les fichiers principaux du site web, tandis que les travaux pratiques 
+                    sont organisés dans un dossier dédié.
+                </p>
+
+                <div class="arborescence-box">
+<code>nawnaw/
+│
+├── 📄 index.html              # Page d'accueil principale
+├── 📄 parcours.html           # Page présentant le parcours académique
+├── 📄 competences.html        # Page des compétences techniques
+├── 📄 experiences.html        # Page des expériences professionnelles
+├── 📄 manifestations.html     # Page des manifestations et événements
+├── 📄 projets.html            # Page des projets réalisés
+├── 📄 passions.html           # Page des passions et centres d'intérêt
+├── 📄 quizz.html              # Page de quiz interactif
+├── 📄 contact.html            # Page de contact avec formulaire
+├── 📄 temoignage.html         # Page de témoignages
+├── 📄 navbar.html             # Composant navbar réutilisable
+│
+├── 📄 styles.css              # Feuille de style principale (8349 lignes)
+├── 📄 script.js               # Script JavaScript principal (1111 lignes)
+├── 📄 loadNavbar.js           # Script de chargement dynamique de la navbar
+├── 📄 emailjs-config.js       # Configuration EmailJS pour le formulaire
+│
+├── 📁 Images et Assets
+│   ├── fav.png, favicon.png   # Favicons
+│   ├── nour1blue.png, nour2.png, nour.jpeg, nour1.jpeg  # Photos de profil
+│   ├── iit.png, iitlogo.png   # Logos institutionnels
+│   ├── club.jpg, sos.jpg, soslogo.jpg  # Images associatives
+│   └── [autres images...]
+│
+├── 📁 Documents
+│   ├── MENII_NOUR(CV).pdf     # CV en format PDF
+│   ├── diplome.pdf            # Documents académiques
+│   └── EMAILJS_SETUP.md       # Documentation EmailJS
+│
+└── 📁 TPs_WEB1/               # Dossier des travaux pratiques
+    ├── README.md
+    ├── TP1.pdf, TP2.pdf, TP3.pdf, TP4.pdf, TP5.pdf
+    │
+    ├── 📁 TP 1/                # Travaux pratiques HTML de base
+    │   └── TP 1/
+    │       ├── index.html
+    │       ├── images/
+    │       └── pages_html/
+    │
+    ├── 📁 TP 2/                # Travaux pratiques avec structure avancée
+    │   └── TP 2/
+    │       ├── index.html
+    │       ├── css/
+    │       ├── images/
+    │       └── pages_html/
+    │
+    ├── 📁 TP 3/                # Travaux pratiques CSS
+    │   └── TP 3/
+    │       ├── style.css
+    │       └── TP 3 CSS.html
+    │
+    ├── 📁 TP 5/                # Travaux pratiques JavaScript
+    │   └── TP 5/
+    │       ├── Exercice1.html, Exercice2.html, Exercice3.html
+    │       ├── css/
+    │       ├── images/
+    │       └── js/
+    │
+    └── 📁 TP4 (2--4)/          # Travaux pratiques combinés
+        └── TP 2--4/
+            ├── index.html
+            ├── css/
+            ├── images/
+            └── pages_html/
+</code>
+                </div>
+
+                <h3>2. Organisation des Fichiers Principaux</h3>
+                <div class="structure-item">
+                    <p><strong>Fichiers HTML :</strong> Chaque page du site est un fichier HTML indépendant, 
+                    permettant une navigation claire et une maintenance facilitée. La navbar est chargée 
+                    dynamiquement via JavaScript pour éviter la duplication de code.</p>
+                </div>
+                <div class="structure-item">
+                    <p><strong>Fichiers CSS :</strong> Un seul fichier <code>styles.css</code> centralise 
+                    tous les styles du site (8349 lignes), garantissant une cohérence visuelle sur toutes 
+                    les pages.</p>
+                </div>
+                <div class="structure-item">
+                    <p><strong>Fichiers JavaScript :</strong> 
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li><code>script.js</code> : Contient les fonctionnalités interactives principales</li>
+                        <li><code>loadNavbar.js</code> : Gère le chargement dynamique de la navbar</li>
+                        <li><code>emailjs-config.js</code> : Configuration pour l'envoi d'emails via EmailJS</li>
+                    </ul>
+                    </p>
+                </div>
+                <div class="structure-item">
+                    <p><strong>Dossier TPs_WEB1 :</strong> Contient tous les travaux pratiques réalisés 
+                    au cours du semestre, organisés par numéro de TP. Chaque TP est autonome avec ses 
+                    propres fichiers HTML, CSS et JavaScript.</p>
+                </div>
+
+                <h3>3. Principes d'Organisation</h3>
+                <div class="info-box">
+                    <p><strong>Modularité :</strong> Séparation claire entre structure (HTML), présentation (CSS) 
+                    et comportement (JavaScript).</p>
+                </div>
+                <div class="info-box">
+                    <p><strong>Réutilisabilité :</strong> La navbar est un composant réutilisable chargé 
+                    dynamiquement sur toutes les pages.</p>
+                </div>
+                <div class="info-box">
+                    <p><strong>Maintenabilité :</strong> Organisation logique des fichiers facilitant 
+                    les mises à jour et l'ajout de nouvelles fonctionnalités.</p>
+                </div>
+            </article>
+
+            <!-- Section 3: Captures d'Écran - Page d'Accueil -->
+            <article class="rapport-section">
+                <h2><i class="fas fa-camera"></i> Captures d'Écran</h2>
+                
+                <h3>1. Page d'Accueil (index.html)</h3>
+                <p>
+                    La page d'accueil présente une section hero avec une introduction personnelle, 
+                    une section "À propos" détaillée, et une section de contact. Le design est moderne 
+                    avec des animations fluides et une navigation intuitive.
+                </p>
+
+                <div class="screenshot-container">
+                    <div class="screenshot-placeholder">
+                        <div>
+                            <i class="fas fa-image"></i>
+                            <p>Capture d'écran de la page d'accueil</p>
+                            <p style="font-size: 0.8em; margin-top: 10px;">(Vue complète de la section hero avec photo de profil)</p>
+                        </div>
+                    </div>
+                    <p class="screenshot-caption">
+                        <strong>Figure 1 :</strong> Page d'accueil - Section Hero avec présentation personnelle
+                    </p>
+                </div>
+
+                <div class="screenshot-container">
+                    <div class="screenshot-placeholder">
+                        <div>
+                            <i class="fas fa-image"></i>
+                            <p>Capture d'écran de la section "À propos"</p>
+                            <p style="font-size: 0.8em; margin-top: 10px;">(Présentation détaillée du parcours et des compétences)</p>
+                        </div>
+                    </div>
+                    <p class="screenshot-caption">
+                        <strong>Figure 2 :</strong> Page d'accueil - Section "À propos de moi"
+                    </p>
+                </div>
+
+                <div class="screenshot-container">
+                    <div class="screenshot-placeholder">
+                        <div>
+                            <i class="fas fa-image"></i>
+                            <p>Capture d'écran de la section contact</p>
+                            <p style="font-size: 0.8em; margin-top: 10px;">(Informations de contact et liens vers réseaux sociaux)</p>
+                        </div>
+                    </div>
+                    <p class="screenshot-caption">
+                        <strong>Figure 3 :</strong> Page d'accueil - Section Contact avec liens vers GitHub et LinkedIn
+                    </p>
+                </div>
+            </article>
+
+            <!-- Section 4: Captures d'Écran - Autres Pages -->
+            <article class="rapport-section">
+                <h3>2. Autres Pages Importantes</h3>
+
+                <h4>Page Compétences (competences.html)</h4>
+                <div class="screenshot-container">
+                    <div class="screenshot-placeholder">
+                        <div>
+                            <i class="fas fa-code"></i>
+                            <p>Capture d'écran de la page Compétences</p>
+                            <p style="font-size: 0.8em; margin-top: 10px;">(Présentation des compétences techniques avec icônes et barres de progression)</p>
+                        </div>
+                    </div>
+                    <p class="screenshot-caption">
+                        <strong>Figure 4 :</strong> Page Compétences - Affichage des technologies maîtrisées
+                    </p>
+                </div>
+
+                <h4>Page Projets (projets.html)</h4>
+                <div class="screenshot-container">
+                    <div class="screenshot-placeholder">
+                        <div>
+                            <i class="fas fa-project-diagram"></i>
+                            <p>Capture d'écran de la page Projets</p>
+                            <p style="font-size: 0.8em; margin-top: 10px;">(Présentation des projets réalisés avec descriptions détaillées)</p>
+                        </div>
+                    </div>
+                    <p class="screenshot-caption">
+                        <strong>Figure 5 :</strong> Page Projets - Liste des projets académiques et professionnels
+                    </p>
+                </div>
+
+                <h4>Page Contact (contact.html)</h4>
+                <div class="screenshot-container">
+                    <div class="screenshot-placeholder">
+                        <div>
+                            <i class="fas fa-envelope"></i>
+                            <p>Capture d'écran de la page Contact</p>
+                            <p style="font-size: 0.8em; margin-top: 10px;">(Formulaire de contact avec validation et intégration EmailJS)</p>
+                        </div>
+                    </div>
+                    <p class="screenshot-caption">
+                        <strong>Figure 6 :</strong> Page Contact - Formulaire de contact fonctionnel
+                    </p>
+                </div>
+
+                <h4>Page Passions (passions.html)</h4>
+                <div class="screenshot-container">
+                    <div class="screenshot-placeholder">
+                        <div>
+                            <i class="fas fa-heart"></i>
+                            <p>Capture d'écran de la page Passions</p>
+                            <p style="font-size: 0.8em; margin-top: 10px;">(Présentation des passions et qualités personnelles avec cartes visuelles)</p>
+                        </div>
+                    </div>
+                    <p class="screenshot-caption">
+                        <strong>Figure 7 :</strong> Page Passions - Innovation, Marketing et Qualités personnelles
+                    </p>
+                </div>
+            </article>
+
+            <!-- Section 5: Caractéristiques Techniques -->
+            <article class="rapport-section">
+                <h2><i class="fas fa-cogs"></i> Caractéristiques Techniques</h2>
+                
+                <h3>Technologies Utilisées</h3>
+                <ul style="line-height: 2;">
+                    <li><strong>HTML5 :</strong> Structure sémantique et accessible</li>
+                    <li><strong>CSS3 :</strong> Styles modernes avec animations et transitions</li>
+                    <li><strong>JavaScript (ES6+) :</strong> Interactivité et chargement dynamique de composants</li>
+                    <li><strong>Bootstrap 5.3.2 :</strong> Framework CSS pour la responsivité</li>
+                    <li><strong>Font Awesome 6.4.0 :</strong> Bibliothèque d'icônes</li>
+                    <li><strong>EmailJS :</strong> Service d'envoi d'emails depuis le formulaire de contact</li>
+                </ul>
+
+                <h3>Fonctionnalités Principales</h3>
+                <ul style="line-height: 2;">
+                    <li>Navigation responsive avec menu hamburger sur mobile</li>
+                    <li>Chargement dynamique de la navbar pour éviter la duplication de code</li>
+                    <li>Animations fluides au scroll et au survol</li>
+                    <li>Formulaire de contact fonctionnel avec validation</li>
+                    <li>Design responsive adapté à tous les écrans</li>
+                    <li>Quiz interactif avec validation JavaScript</li>
+                </ul>
+            </article>
+
+            <!-- Section 6: Conclusion -->
+            <article class="rapport-section">
+                <h2><i class="fas fa-check-circle"></i> Conclusion</h2>
+                <p>
+                    Ce projet de portfolio personnel démontre une maîtrise solide des technologies web fondamentales. 
+                    L'organisation modulaire des fichiers facilite la maintenance et l'évolution du site. 
+                    L'architecture choisie permet une séparation claire des responsabilités entre structure, 
+                    présentation et comportement.
+                </p>
+                <p>
+                    Le site présente une interface utilisateur moderne et intuitive, avec une navigation fluide 
+                    et des animations soignées. Toutes les pages sont responsive et s'adaptent parfaitement aux 
+                    différents formats d'écran, des smartphones aux écrans de bureau.
+                </p>
+                <p>
+                    L'intégration de services externes comme EmailJS pour le formulaire de contact et l'utilisation 
+                    de bibliothèques modernes (Bootstrap, Font Awesome) témoignent d'une approche professionnelle 
+                    du développement web.
+                </p>
+                <div class="info-box" style="margin-top: 30px;">
+                    <p>
+                        <strong>Note :</strong> Pour ajouter les captures d'écran réelles, remplacez les placeholders 
+                        par des balises <code>&lt;img&gt;</code> pointant vers les fichiers d'images des captures 
+                        d'écran sauvegardées dans le dossier du projet.
+                    </p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p class="footer-copyright">&copy; 2025 Nour Menii. Tous droits réservés.</p>
+    </footer>
+
+    <script src="loadNavbar.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
